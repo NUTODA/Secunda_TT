@@ -1,0 +1,10 @@
+version: '3.11'
+
+services:
+  app:
+    image: nutoda/secunda:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
